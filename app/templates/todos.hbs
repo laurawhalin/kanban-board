@@ -1,0 +1,15 @@
+<div class="unassigned">
+  {{#each todo in unassigned}}
+  <div class="cards">
+    <span class="todo-project">{{todo.project}}</span>
+  </div>
+  {{/each}}
+</div>
+
+<div class="assigned">
+  {{#each todo in assigned}}
+  <div class="cards">
+    <span class="todo-project">{{todo.project}}</span>
+  </div>
+  {{/each}}
+</div>
