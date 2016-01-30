@@ -22,3 +22,11 @@ test('assigned items are grouped together', function(assert) {
     assert.equal(project.text(), "last");
   });
 });
+
+test("status is shown in plain english", function(assert) {
+  visit('/');
+  andThen(function() {
+    var status = find(".assigned .cards:eq(0) .todo-status");
+    assert.equal(status.text(), "Assigned");
+  });
+})
